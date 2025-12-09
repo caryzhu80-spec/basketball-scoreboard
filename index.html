@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Bebas+Neue&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Happy+Monkey&family=Henny+Penny&family=Lacquer&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playfair+Display:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+            <img src="/images/huskylogo.png" alt="husky logo">
+            <div id="timer">
+                <span id="minutes">10</span>
+                <button id="start-stop-btn" onclick="startStopTimer()">START</button>              
+                <button class="reset-btn" id="reset-timer" onclick="resetTimer()">RESET</button>                
+                <span id="seconds">00</span>
+            </div>
+            <img src="/images/namelogo.png" alt="name logo">
+        </header>
+        <div class="scores-container">
+            <div class="score-changer">
+                <button class="score-changerbutton"  onclick="changeScore('home', 1)">+1</button>
+                <button class="score-changerbutton"  onclick="changeScore('home', 2)">+2</button>
+                <button class="score-changerbutton"  onclick="changeScore('home', 3)">+3</button>
+                <button class="reset-btn" onclick="resetScore('home')">0</button> 
+            </div>
+            <div id="homeScore">
+                <span id="home-score" class="digital-display">0</span>
+                <h3>HOME</h3>
+            </div>
+            <div id="status">
+                <button id="new-game" onclick="restart()">NEW GAME</button>
+                <h3>PERIOD</h3>
+                <span id="period" class="digital-display">1</span>
+                <div id="score-changer-period">
+                    <button class="score-changerbutton" onclick="changePeriod(1)">+1</button>
+                    <button class="score-changerbutton" onclick="changePeriod(-1)">-1</button>
+                    <button class="score-changerbutton" onclick="changePeriod(0)">0</button>
+                </div>
+            </div>
+            <div id="guestScore">
+                <span id="guest-score" class="digital-display">0</span>
+                <h3>GUEST</h3>
+            </div>
+            <div class="score-changer">
+                <button class="score-changerbutton" onclick="changeScore('guest', 1)">+1</button>
+                <button class="score-changerbutton" onclick="changeScore('guest', 2)">+2</button>
+                <button class="score-changerbutton" onclick="changeScore('guest', 3)">+3</button>
+                <button class="reset-btn" onclick="resetScore('guest')">0</button> 
+            </div>
+        </div>
+        <div id="separator"></div>
+        <div class="fouls-container">
+            <div class="score-changer">
+                <button class="score-changerbutton" onclick="changeFouls('home', 1)">+1</button>
+                <button class="score-changerbutton" onclick="changeFouls('home', -1)">-1</button>
+                <button class="reset-btn" onclick="resetScore('home-fouls')">0</button> 
+            </div>
+            <div id="homefouls">
+                <h3>FOULS</h3>
+                <span id="home-fouls" class="digital-display">0</span>
+            </div>
+            <div id="guestfouls">
+                <h3>FOULS</h3>
+                <span id="guest-fouls" class="digital-display">0</span>
+            </div>
+            <div class="score-changer">
+                <button class="score-changerbutton"  onclick="changeFouls('guest', 1)">+1</button>
+                <button class="score-changerbutton"  onclick="changeFouls('guest', -1)">-1</button>
+                <button class="reset-btn" onclick="resetScore('guest-fouls')">0</button> 
+            </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>

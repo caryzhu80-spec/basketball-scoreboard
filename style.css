@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #023360;
+  color: white;
+  font-size: 3rem;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.digital-display{
+    height: 120px;
+    width: 180px;
+    background-color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items:end; 
+    
+    color: white; 
+    font-size: 10rem; 
+    font-family: 'Space Mono', monospace; 
+
+    border: 10px solid white;
+
+    
+}
+
+.score-changer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.score-changerbutton{
+    width: 80px;
+    height: 60px;
+    font-size: 2.4rem;
+    border-radius: 20px;
+}
+
+#new-game{
+    display: block;
+    font-size: 2rem;
+    border-radius: 20px;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+
+#home-score, #guest-score{
+    background-color: black;
+    height: 120px;
+    width: 280px;
+    padding: 10px;
+
+}
+
+#period{
+    background-color: black;
+     height: 140px;
+    width: 100px;
+}
+
+#score-changer-period{
+    margin-top: 10px;
+}
+ #home-fouls,#guest-fouls{
+    background-color: black;
+     height: 140px;
+    width: 180px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+    align-items: center;
+}
+
+#minutes, #seconds{
+    height: 120px;
+    width: 180px;
+    background-color: black;
+    
+    display: flex;
+    justify-content:left; 
+    align-items: center; 
+    
+    color: white; 
+    font-size: 10rem; 
+    font-family: 'Space Mono', monospace; 
+
+    border: 10px solid white;
+    padding: 10px;
+}
+
+#timer{
+    display: flex;
+    border: 10px solid white;
+    gap: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+#start-stop-btn ,#reset-timer{
+    width: 100px;
+    height: 100px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.reset-btn{
+      width: 80px;
+    height: 60px;
+    font-size: 2.4rem;
+    border-radius: 20px;
+}
+
+.scores-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+    align-items: flex-start;
+}
+
+#homeScore,
+#guestScore {
+    margin-top: 50px; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#separator{
+    width: 100%; 
+    
+    height: 5px; 
+    
+    background-color: white; 
+    
+    margin: 30px 0px; 
+    
+    display: block;
+}
+
+.fouls-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#homefouls, #guestfouls{
+    margin-top: -40px;
+}
+
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    margin: 5px 0; /* Tighten up spacing */
+    font-size: 4rem;
+    letter-spacing: 5px
+}
+
+h4 {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    margin: 5px 0; /* Tighten up spacing */
+    font-size: 3rem;
+    letter-spacing: 5px
+}
+
+.is-leading {
+    color: #ffcc00 !important; 
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.7); 
+}
