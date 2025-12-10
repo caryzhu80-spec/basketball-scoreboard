@@ -23,9 +23,9 @@ img{
     justify-content: center; 
     align-items:end; 
     
-    color: white; 
-    font-size: 10rem; 
-    font-family: 'Space Mono', monospace; 
+    color: red;
+    font-size: 10rem;
+    font-family: 'Seven Segment', sans-serif;
 
     border: 10px solid white;
 
@@ -58,7 +58,7 @@ img{
 #home-score, #guest-score{
     background-color: black;
     height: 120px;
-    width: 280px;
+    width: 240px;
     padding: 10px;
 
 }
@@ -87,16 +87,18 @@ img{
 
 #minutes, #seconds{
     height: 120px;
-    width: 180px;
+    width: 160px;
     background-color: black;
     
     display: flex;
-    justify-content:left; 
+    justify-content:right; 
     align-items: center; 
+
+    text-align: center;
     
-    color: white; 
-    font-size: 10rem; 
-    font-family: 'Space Mono', monospace; 
+    color: red;
+    font-size: 10rem;
+    font-family: 'Seven Segment', sans-serif; 
 
     border: 10px solid white;
     padding: 10px;

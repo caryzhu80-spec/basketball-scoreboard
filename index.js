@@ -119,7 +119,7 @@ function changeFouls(team,amount){
             newFouls = 0;
         }
 
-        if(amount = 0){
+        if(amount === 0){
             newFouls = 0;
         }
         homeFoulsCount = newFouls;
